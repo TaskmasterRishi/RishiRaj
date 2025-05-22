@@ -29,20 +29,17 @@ const Navbar = memo(function Navbar() {
           </Link>
 
           {/* Centered navigation links (desktop) */}
-          <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
+          <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
-              <motion.div
-                key={link.href}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Link
-                  href={link.href}
+              <Link href={link.href} key={link.href}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   className="hover:text-gray-300 transition-colors duration-200"
                 >
                   {link.label}
-                </Link>
-              </motion.div>
+                </motion.div>
+              </Link>
             ))}
           </div>
 
@@ -117,19 +114,16 @@ const Navbar = memo(function Navbar() {
           >
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <motion.div
-                  key={link.href}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link
-                    href={link.href}
+                <Link href={link.href} key={link.href}>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                     className="hover:text-gray-300 text-white transition-colors duration-200 text-center"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
-                  </Link>
-                </motion.div>
+                  </motion.div>
+                </Link>
               ))}
             </div>
           </motion.div>
