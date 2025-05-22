@@ -20,7 +20,7 @@ const Navbar = memo(function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="bg-black text-white p-4 shadow-lg fixed w-full z-50 h-16"
+        className="bg-gradient-to-r from-gray-900 to-black text-white p-4 shadow-lg fixed w-full z-50 h-16"
       >
         <div className="container mx-auto flex justify-between items-center h-full">
           {/* Logo on the left */}
