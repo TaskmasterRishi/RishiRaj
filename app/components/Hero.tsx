@@ -11,7 +11,7 @@ const Hero = React.memo(() => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="w-full h-[80vh] sm:h-[85vh] min-h-[500px] sm:min-h-[600px] flex flex-col items-start px-4 xs:px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 justify-center relative text-white"
+        className="w-full h-[50vh] sm:h-[85vh] min-h-[400px] sm:min-h-[600px] flex flex-col items-start px-4 xs:px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 justify-center relative text-white"
       >
         <motion.video
           initial={{ opacity: 0, y: -500 }}
@@ -37,7 +37,7 @@ const Hero = React.memo(() => {
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-[0.05rem] sm:tracking-[0.1rem] md:tracking-[0.2rem]"
+            className="text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-[0.05rem] sm:tracking-[0.1rem] md:tracking-[0.2rem]"
             style={{ fontFamily: '"Merriweather", serif' }}
           >
             RishiRaj Corporation
@@ -46,7 +46,7 @@ const Hero = React.memo(() => {
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl pt-3 sm:pt-4 md:pt-6 lg:pt-8 font-semibold"
+            className="text-lg sm:text-lg md:text-xl lg:text-2xl pt-3 sm:pt-4 md:pt-6 lg:pt-8 font-semibold"
           >
             Where Controlled Explosions Drive Unlimited Potential
           </motion.p>
@@ -54,7 +54,7 @@ const Hero = React.memo(() => {
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 pt-1 sm:pt-2 md:pt-3 max-w-2xl"
+            className="text-sm sm:text-sm md:text-base lg:text-lg text-gray-300 pt-1 sm:pt-2 md:pt-3 max-w-2xl"
           >
             RishiRaj Corporation is a trusted name in explosive mining, offering complete blasting solutions with unmatched expertise. 100% mining. No compromises.
           </motion.p>
@@ -63,7 +63,7 @@ const Hero = React.memo(() => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
-            className="mt-4 sm:mt-6 md:mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 sm:py-2.5 md:py-3 px-3 sm:px-4 md:px-6 rounded-lg transition duration-300 hover:scale-105 text-xs sm:text-sm md:text-base"
+            className="mt-4 sm:mt-6 md:mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 sm:py-2.5 md:py-3 px-3 sm:px-4 md:px-6 rounded-lg transition duration-300 hover:scale-105 text-sm sm:text-sm md:text-base"
             onClick={() => window.location.href = '/contact'}
           >
             Get a Free Consultation
@@ -81,8 +81,8 @@ const Hero = React.memo(() => {
               { value: "99.9%", label: "Safety Record" }
             ].map((item, index) => (
               <div key={index} className="text-center px-1 sm:px-2">
-                <p className="text-lg sm:text-xl font-bold">{item.value}</p>
-                <p className="text-[0.5rem] xs:text-[0.6rem] sm:text-xs md:text-sm">{item.label}</p>
+                <p className="text-xl sm:text-xl font-bold">{item.value}</p>
+                <p className="text-xs xs:text-xs sm:text-xs md:text-sm">{item.label}</p>
               </div>
             ))}
           </motion.div>
@@ -104,7 +104,7 @@ const Hero = React.memo(() => {
             height={64}
             className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto"
           />
-          <p className="text-xs sm:text-sm md:text-base text-gray-800">
+          <p className="text-sm sm:text-sm md:text-base text-gray-800">
             <span className="font-semibold text-black">Licensed & Verified:</span> All operations are conducted under valid licenses and verified by <span className="font-semibold text-black">PESO (Petroleum and Explosives Safety Organization)</span>.
           </p>
         </div>
